@@ -1,0 +1,40 @@
+.jumbotron {
+	height: 600px;
+  	background: url(../img/background.jpg) no-repeat center center;
+  	background-size: cover;
+	.jumbo-content {
+		position: relative;
+		top: 50px;
+		text-align: center;
+		@media (max-width: 550px) {
+			top: 80px;
+		}
+		.container {
+			margin: auto;
+		}
+		img {
+			width: 400px;
+			height: auto;
+			margin: auto;
+			@media (max-width: 550px) {
+				width: 300px;
+			}
+		}
+		p {
+			font-size: 18px;
+			color: @white;
+			padding: 50px 200px 20px 200px;
+			@media (max-width: 1075px) {
+				padding: 50px 100px 20px 100px;
+			}
+			@media (max-width: 940px) {
+				padding: 50px 50px 20px 50px;
+			}
+			@media (max-width: 400px) {
+				padding: 50px 30px 20px 30px;
+			}
+		}
+	}
+}
+
+

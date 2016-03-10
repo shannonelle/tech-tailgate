@@ -1,0 +1,29 @@
+{
+  "name": "tech-tailgate",
+  "version": "1.0.0",
+  "description": "Tech Tailgate Site",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://meganbeck@github.com/meganbeck/tech-tailgate.git"
+  },
+  "keywords": [
+    "tech",
+    "tailgate"
+  ],
+  "author": "megan beck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganbeck/tech-tailgate/issues"
+  },
+  "homepage": "https://github.com/meganbeck/tech-tailgate#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.10.0"
+  }
+}

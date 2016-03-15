@@ -48,8 +48,7 @@
 
 <!-- Custom -->
 <link rel="stylesheet" type="text/css" href="css/techtailgate.css" />
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -62,44 +61,45 @@
 
 <!-- main nav -->
 
-<div class="main-nav">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="main-nav">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-	  	<div class="container-fluid">
+		  	<div class="container-fluid">
 
-			<div class="navbar-header">
-		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		      	</button>
-			</div> <!--/.navbar-header -->
+				<div class="navbar-header">
+			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+				</div> <!--.navbar-header -->
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <!-- Collect the nav links, forms, and other content for toggling -->
 
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <ul class="nav navbar-nav navbar-right">
-			    	<li><a href="#about">About</a></li>
-			        <li><a href="#meetups">Meet Ups</a></li>
-			        <li><a href="#" target="_blank">Get Tickets</a></li>
-		      	</ul>
-		    </div><!-- /.navbar-collapse -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav navbar-right">
+				    	<li><a href="/about.html">About</a></li>
+				        <li><a href="/cities">Cities</a></li>
+				        <li><a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731" target="_blank">Get Tickets</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
 
-	  	</div> <!--/.container-fluid -->
-	</nav>
-</div> <!-- /.main-nav -->
+		  	</div> <!--/.container-fluid -->
+		</nav>
+	</div> <!-- /.main-nav -->
 
 
 
 
 <!-- jumbotron -->
 <div class="jumbotron">
+	<!--<img src="img/background.jpg" alt="Background Image" class="background-img" />-->
 	<div class="jumbo-content">
-		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-	    	<img src="img/cities/fargo/teamfargo_logo.png" alt="Tech Tailgate Fargo" class="img-responsive logo" />
+		<div class="container">
+	    	<img src="img/tech-tailgate-logo-white.png" alt="Tech Tailgate" class="img-responsive logo" />
 	    	<p>One night, nine tech meetup groups, and plenty of beer. If you've ever been interested in checking out the tech meetups in the area, but really haven't been able to find the time to get to all of them, Tech Tailgate is the perfect opportunity.</p>
-	    	<a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731" target="_blank"><button type="button" class="btn btn-default">Get Tickets</button></a>
+	    	<a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731" target="_blank"><button type="button" class="btn btn-primary">Get Tickets</button></a>
 	    </div>
 	</div>
 </div>
@@ -109,45 +109,45 @@
 
 
 <!-- About -->
-<div id="about">
+<a name="about" class="top"></a>
+<div id="about-id">
 	<div class="container">
-		<div class="thumbnails">
+		<div class="row">
+			<div class="thumbnails">
+					<div class="col-sm-4">
+						<img src="img/when-icon.png" alt="When Icon" class="img-responsive" />
+						<h3>When</h3>
+						<p>July 16th, 2015<br />
+						5:30pm - 8:00pm<br /></p>
+					</div><!--/col-md-4 -->
 
-			<div class="col-sm-4">
-				<img src="img/when-icon.png" alt="When Icon" class="img-responsive" />
-				<h3>When</h3>
-				<p>July 16th, 2015<br />
-				5:30pm - 8:00pm<br /></p>
-			</div><!--/col-md-4 -->
+					<div class="col-sm-4">
+						<img src="img/location-icon.png" alt="Location Icon" class="img-responsive" />
+						<h3>Where</h3>
+						<p>Fargo Brewing Company<br />
+						610 N University Dr Fargo, ND</p>
+					</div> <!--/col-md-4 -->
 
-			<div class="col-sm-4">
-				<img src="img/location-icon.png" alt="Location Icon" class="img-responsive" />
-				<h3>Where</h3>
-				<p>Fargo Brewing Company<br />
-				610 N University Dr Fargo, ND</p>
-			</div> <!--/col-md-4 -->
-
-			<div class="col-sm-4">
-				<img src="img/beer-icon.png" alt="Drink Icon" class="img-responsive" />
-				<h3>What</h3>
-				<p>Happy Hour Beer Prices<br/> All Night &amp; Pizza Provided</p>
-			</div><!--/col-md-4 -->
-
-		</div><!--/thumbnails-->
+					<div class="col-sm-4">
+						<img src="img/beer-icon.png" alt="Drink Icon" class="img-responsive" />
+						<h3>What</h3>
+						<p>Happy Hour Beer Prices<br/> All Night &amp; Pizza Provided</p>
+					</div><!--/col-md-4 -->
+			</div><!--/thumbnails-->
+		</div><!--/row-->
 	</div>
-</div>
 
-
-
-
-
-<!-- Meetups Intro -->
-
-<div class="meetups-intro">
-	<div class="col-sm-8 col-sm-offset-2">
-		<h2 class="white">Meet the Meetups</h2>
-		<hr>
-		<p>Each meetup will be "tailgating" in the Fargo Brewing Company parking lot, strutting their stuff and showing you exaclty what they're about. We have meetups focused the web, mobile, education, content strategy, and just plain geeks and nerds!</p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="meet-the-meetups">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h2>Meet the Meetups</h2>
+					<hr>
+					<p>The tech industry in the Fargo/Moorhead area is exploding. In the best way possible. Tech Tailgate wants to give you the opportunity to check out some of the many different meetup groups in the area. Each meetup will be "tailgating" in the Fargo Brewing Company parking lot, strutting their stuff and showing you exaclty what they're about. We have meetups focused the web, mobile, education, content strategy, and just plain geeks and nerds!</p>
+					<h6>Check out who will be there.</h6>
+				</div>
+			</div>
+		</div><!--/row-->
 	</div>
 </div>
 
@@ -158,13 +158,14 @@
 
 <!-- Meetups -->
 
-<div id="meetups">
+<a name="meetups" class="top"></a>
+<div id="meetups-id">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="media gdi">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/gdi-logo.jpg" alt="Girl Develop It Fargo">
+						<img class="media-object" src="img/gdi-logo.jpg" alt="Girl Develop It Fargo">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Girl Develop It Fargo</h4>
@@ -177,7 +178,7 @@
 			<div class="col-md-6">
 				<div class="media fargo-game-makers">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/fargo-game-makers.jpg" alt="Fargo Game Makers">
+						<img class="media-object" src="img/fargo-game-makers.jpg" alt="Fargo Game Makers">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Fargo Game Makers</h4>
@@ -192,7 +193,7 @@
 			<div class="col-md-6">
 				<div class="media interface-fargo">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/interface-fargo.jpg" alt="Interface Fargo">
+						<img class="media-object" src="img/interface-fargo.jpg" alt="Interface Fargo">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Interface Fargo</h4>
@@ -205,7 +206,7 @@
 			<div class="col-md-6">
 				<div class="media ns-fargo">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/ns-fargo.jpg" alt="NS Fargo">
+						<img class="media-object" src="img/ns-fargo.jpg" alt="NS Fargo">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">NS Fargo</h4>
@@ -220,7 +221,7 @@
 			<div class="col-md-6">
 				<div class="media geek-meet">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/geek-meet.jpg" alt="Geek Meet">
+						<img class="media-object" src="img/geek-meet.jpg" alt="Geek Meet">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Geek Meet</h4>
@@ -233,7 +234,7 @@
 			<div class="col-md-6">
 				<div class="media hack-fargo">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/hack-fargo.jpg" alt="Hack Fargo">
+						<img class="media-object" src="img/hack-fargo.jpg" alt="Hack Fargo">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Hack Fargo</h4>
@@ -248,7 +249,7 @@
 			<div class="col-md-6">
 				<div class="media fm-content-strategy">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/fm-content-strategy.jpg" alt="Content Strategy">
+						<img class="media-object" src="img/fm-content-strategy.jpg" alt="Content Strategy">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Fargo Moorhead Content Strategy</h4>
@@ -261,7 +262,7 @@
 			<div class="col-md-6">
 				<div class="media rrwg">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/rrwg.jpg" alt="Red River Web Group">
+						<img class="media-object" src="img/rrwg.jpg" alt="Red River Web Group">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Red River Web Group</h4>
@@ -276,7 +277,7 @@
 			<div class="col-md-6">
 				<div class="media good-for-nothing">
 					<div class="media-left">
-						<img class="media-object" src="img/cities/fargo/good-for-nothing.jpg" alt="Content Strategy">
+						<img class="media-object" src="img/good-for-nothing.jpg" alt="Content Strategy">
 					</div>
 					<div class="media-body">
 						<h4 class="media-heading">Good For Nothing Fargo</h4>
@@ -297,22 +298,26 @@
 
 
 <!-- Registration -->
-<div id="registration">
+
+<a name="registration" class="top"></a>
+
+<div id="registration-id">
 	<a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731"><button type="button" class="btn btn-default">Get Tickets</button></a>
 	<p><strong>Questions?</strong> fargo@girldevelopit.com</p>
 </div>
 
 
 <!-- Registration -->
+
+<a name="sponsors" class="top"></a>
+
 <div id="sponsors">
 	<h3>Sponsors</h3>
-	<div class="logos">
-		<a href="https://twitter.com/gdifar" target="_blank"><img src="img/cities/fargo/gdi-logo.png" /></a>
-		<a href="http://www.fargogamemakers.com/" target="_blank"><img src="img/cities/fargo/fargo-game-makers-sponsor.png" /></a>
-		<a href="http://coschedule.com/" target="_blank"><img src="img/cities/fargo/CoSchedule_logo.png" /></a>
-		<a href="http://gfmedc.com/" target="_blank"><img src="img/cities/fargo/GFM_logo_EDC_2c.png" /></a>
-		<a href="http://fargobrewing.com/" target="_blank"><img src="img/cities/fargo/fargo-brewing-sponsor.png" style="max-height:80px" /></a>
-	</div>
+	<a href="https://twitter.com/gdifar" target="_blank"><img src="img/gdi-logo-sponsor.png" height="45px" /></a>
+	<a href="http://www.fargogamemakers.com/" target="_blank"><img src="img/fargo-game-makers-sponsor.png" height="60px" /></a>
+	<a href="http://coschedule.com/" target="_blank"><img src="img/CoSchedule_logo.png" height="50px" /></a>
+	<a href="http://gfmedc.com/" target="_blank"><img src="img/GFM_logo_EDC_2c.png" height="40px"/></a>
+	<a href="http://gfmedc.com/" target="_blank"><img src="img/fargo-brewing-sponsor.png" height="80px"/></a>
 </div>
 
 <!--

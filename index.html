@@ -48,7 +48,8 @@
 
 <!-- Custom -->
 <link rel="stylesheet" type="text/css" href="css/techtailgate.css" />
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,36 +59,33 @@
 
 
 <!-- main nav -->
+<div class="main-nav">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-<!-- main nav -->
+	  	<div class="container-fluid">
 
-	<div class="main-nav">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+			</div> <!--.navbar-header -->
 
-		  	<div class="container-fluid">
+		    <!-- Collect the nav links, forms, and other content for toggling -->
 
-				<div class="navbar-header">
-			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-			      	</button>
-				</div> <!--.navbar-header -->
+		    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+			    <ul class="nav navbar-nav navbar-right">
+			    	<li><a href="#abouttechtailgate">About</a></li>
+			        <li><a href="#cities">Cities</a></li>
+			        <li><a href="#contact">Contact Us</a></li>
+		      	</ul>
+		    </div><!-- /.navbar-collapse -->
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				    <ul class="nav navbar-nav navbar-right">
-				    	<li><a href="#about">About</a></li>
-				        <li><a href="#meetups">Meet Ups</a></li>
-				        <li><a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731" target="_blank">Get Tickets</a></li>
-			      	</ul>
-			    </div><!-- /.navbar-collapse -->
-
-		  	</div> <!--/.container-fluid -->
-		</nav>
-	</div> <!-- /.main-nav -->
+	  	</div> <!--/.container-fluid -->
+	</nav>
+</div> <!-- /.main-nav -->
 
 
 
@@ -97,9 +95,11 @@
 	<!--<img src="img/background.jpg" alt="Background Image" class="background-img" />-->
 	<div class="jumbo-content">
 		<div class="container">
-	    	<img src="img/tech-tailgate-logo-white.png" alt="Tech Tailgate" class="img-responsive logo" />
-	    	<p>One night, nine tech meetup groups, and plenty of beer. If you've ever been interested in checking out the tech meetups in the area, but really haven't been able to find the time to get to all of them, Tech Tailgate is the perfect opportunity.</p>
-	    	<a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731" target="_blank"><button type="button" class="btn btn-primary">Get Tickets</button></a>
+	    	<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+	    		<img src="img/tech-tailgate-logo-white.png" alt="Tech Tailgate" class="img-responsive logo" />
+	    		<p>A meeup of the meetups. A celebration bringing together the entire tech community and each group that dedicates its time and energy towards pushing the indstury forward.</p>
+	    		<a href="#cities" target="_blank"><button type="button" class="btn btn-default">Find Your City</button></a>
+	    	</div>
 	    </div>
 	</div>
 </div>
@@ -109,185 +109,65 @@
 
 
 <!-- About -->
-<a name="about" class="top"></a>
-<div id="about-id">
+<div id="abouttechtailgate">
 	<div class="container">
-		<div class="row">
-			<div class="thumbnails">
-					<div class="col-sm-4">
-						<img src="img/when-icon.png" alt="When Icon" class="img-responsive" />
-						<h3>When</h3>
-						<p>July 16th, 2015<br />
-						5:30pm - 8:00pm<br /></p>
-					</div><!--/col-md-4 -->
-
-					<div class="col-sm-4">
-						<img src="img/location-icon.png" alt="Location Icon" class="img-responsive" />
-						<h3>Where</h3>
-						<p>Fargo Brewing Company<br />
-						610 N University Dr Fargo, ND</p>
-					</div> <!--/col-md-4 -->
-
-					<div class="col-sm-4">
-						<img src="img/beer-icon.png" alt="Drink Icon" class="img-responsive" />
-						<h3>What</h3>
-						<p>Happy Hour Beer Prices<br/> All Night &amp; Pizza Provided</p>
-					</div><!--/col-md-4 -->
-			</div><!--/thumbnails-->
-		</div><!--/row-->
+		<div class="col-md-8 col-md-offset-2">
+			<h2>Bringing the tech industry together, one tailgate at a time.</h2>
+			<p>The technology industry is constantly changing and evolving. It's building and growing cities, it's changing lives and bringing people together. We've noticed that with every day, there are more and more tech meetup groups, each with a different purpose, a different mission. It's the goal of tech tailgate to bring together people from every group, to celebrate the tech community in all its corners.</p>
+			<img src="img/tt-graphic.png" class="img-responsive tt-graphic" />
+			<p>The first Tech Tailgate was born in the booming town of Fargo, ND. Held in a local brewery parking lot, tech meetup groups came tiny cars, jacked-up trucks, and some crossover SUVs. They lined the lot, opened their tailgates, and strut their stuff. Beer was drank, pizza was ate, and the fun lasted far later into the night than it should have on a Thursday evening.</p>
+			<p>Tech Tailgate has since grown from that first parking lot party to be a highly-antipated, annual celebration of the tech industry, spreading to cities across the US. <a href="#cities">Find out if your city's on the list!</a></p>
+		</div>
 	</div>
+</div>
 
+
+
+<!-- Cities -->
+<div id="cities">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="meet-the-meetups">
-				<div class="col-sm-10 col-sm-offset-1">
-					<h2>Meet the Meetups</h2>
-					<hr>
-					<p>The tech industry in the Fargo/Moorhead area is exploding. In the best way possible. Tech Tailgate wants to give you the opportunity to check out some of the many different meetup groups in the area. Each meetup will be "tailgating" in the Fargo Brewing Company parking lot, strutting their stuff and showing you exaclty what they're about. We have meetups focused the web, mobile, education, content strategy, and just plain geeks and nerds!</p>
-					<h6>Check out who will be there.</h6>
+		<div class="col-sm-10 col-sm-offset-1">
+			<h1>Cities</h1>
+			<p>Don't see yours on the list but want a Tech Tailgate in your city? <a href="#contact">Contact Us!</a></p>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="/dayton">
+						<div class="city-block dayton">
+							<h2>Dayton, OH</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="/fargo">
+						<div class="city-block fargo">
+							<h2>Fargo, ND</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="/milwaukee">
+						<div class="city-block milwaukee">
+							<h2>Milwaukee, WI</h2>
+						</div>
+					</a>
 				</div>
 			</div>
-		</div><!--/row-->
-	</div>
-</div>
-
-
-
-
-
-
-<!-- Meetups -->
-
-<a name="meetups" class="top"></a>
-<div id="meetups-id">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="media gdi">
-					<div class="media-left">
-						<img class="media-object" src="img/gdi-logo.jpg" alt="Girl Develop It Fargo">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Girl Develop It Fargo</h4>
-						<hr>
-						<p>A nonprofit organization providing affordable &amp; accessible programs to women (18+) who want to learn web &amp; software development through hands-on instruction.</p>
-						<h6><a href="https://www.girldevelopit.com/chapters/fargo" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="/rochester">
+						<div class="city-block rochester">
+							<h2>Rochester, NY</h2>
+						</div>
+					</a>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="media fargo-game-makers">
-					<div class="media-left">
-						<img class="media-object" src="img/fargo-game-makers.jpg" alt="Fargo Game Makers">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Fargo Game Makers</h4>
-						<hr>
-						<p>A place to connect with current or aspiring game designers, creatives, and engineers in the Fargo, North Dakota area.</p>
-						<h6><a href="http://www.fargogamemakers.com/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
+				<div class="col-sm-4">
+					<a href="/tampabay">
+						<div class="city-block tampabay">
+							<h2>Tampa Bay, FL</h2>
+						</div>
+					</a>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="media interface-fargo">
-					<div class="media-left">
-						<img class="media-object" src="img/interface-fargo.jpg" alt="Interface Fargo">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Interface Fargo</h4>
-						<hr>
-						<p>A biweekly meetup focused on learning from platform creators, inventors, and pioneers about unique solutions to difficult problems in technology.</p>
-						<h6><a href="http://prairie.io/organizers/1" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="media ns-fargo">
-					<div class="media-left">
-						<img class="media-object" src="img/ns-fargo.jpg" alt="NS Fargo">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">NS Fargo</h4>
-						<hr>
-						<p>A developer focused meet-up group. The focus of the meet-ups are determined by our members. We are Apple fanboys, so we favor iOS and OS X development.</p>
-						<h6><a href="https://nsfargo.com/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="media geek-meet">
-					<div class="media-left">
-						<img class="media-object" src="img/geek-meet.jpg" alt="Geek Meet">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Geek Meet</h4>
-						<hr>
-						<p>We are geeks, nerds, hackers, and everything in between. The group was founded primarily on a common interest in diving deeper into web platforms, frameworks, technologies, and best practices.</p>
-						<h6><a href="http://www.meetup.com/Geek-Meet-FM/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="media hack-fargo">
-					<div class="media-left">
-						<img class="media-object" src="img/hack-fargo.jpg" alt="Hack Fargo">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Hack Fargo</h4>
-						<hr>
-						<p>We are seeking to be a non-profit organization promoting and enabling the idea of open and accessible public data in the greater Fargo area.</p>
-						<h6><a href="http://hackfargo.co/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="media fm-content-strategy">
-					<div class="media-left">
-						<img class="media-object" src="img/fm-content-strategy.jpg" alt="Content Strategy">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Fargo Moorhead Content Strategy</h4>
-						<hr>
-						<p>Join other content nerds for regular discussions on strategy, trends, best practices, tools, professional development and more.</p>
-						<h6><a href="http://www.meetup.com/Fargo-Moorhead-Content-Strategy/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="media rrwg">
-					<div class="media-left">
-						<img class="media-object" src="img/rrwg.jpg" alt="Red River Web Group">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Red River Web Group</h4>
-						<hr>
-						<p>A group of web enthusiasts whose purpose is to provide a local platform for Web Professionals, students and related industry professionals to network.</p>
-						<h6><a href="http://www.meetup.com/fargo-web-group/" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="media good-for-nothing">
-					<div class="media-left">
-						<img class="media-object" src="img/good-for-nothing.jpg" alt="Content Strategy">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Good For Nothing Fargo</h4>
-						<hr>
-						<p>GFN is an experimental collaborative community with an emphasis on experimental. Smart folk collaborating and experimenting to solve stuff that matters.</p>
-						<h6><a href="http://www.goodfornothing.com/chapter/fargo" target="_blank"><span class="glyphicon glyphicon-new-window"></span> Visit Website</a></h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
 			</div>
 		</div>
 	</div>
@@ -297,28 +177,11 @@
 
 
 
-<!-- Registration -->
+<!-- Contact -->
+<div id="contact">
 
-<a name="registration" class="top"></a>
-
-<div id="registration-id">
-	<a href="https://www.eventbrite.com/e/tech-tailgate-tickets-17418676731"><button type="button" class="btn btn-default">Get Tickets</button></a>
-	<p><strong>Questions?</strong> fargo@girldevelopit.com</p>
 </div>
 
-
-<!-- Registration -->
-
-<a name="sponsors" class="top"></a>
-
-<div id="sponsors">
-	<h3>Sponsors</h3>
-	<a href="https://twitter.com/gdifar" target="_blank"><img src="img/gdi-logo-sponsor.png" height="45px" /></a>
-	<a href="http://www.fargogamemakers.com/" target="_blank"><img src="img/fargo-game-makers-sponsor.png" height="60px" /></a>
-	<a href="http://coschedule.com/" target="_blank"><img src="img/CoSchedule_logo.png" height="50px" /></a>
-	<a href="http://gfmedc.com/" target="_blank"><img src="img/GFM_logo_EDC_2c.png" height="40px"/></a>
-	<a href="http://gfmedc.com/" target="_blank"><img src="img/fargo-brewing-sponsor.png" height="80px"/></a>
-</div>
 
 <!--
 <img src="img/twitter-icon-gray.png" alt="Twitter" height="30px" />

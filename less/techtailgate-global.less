@@ -1,253 +1,203 @@
 //Color Palette
+@grey3: #e7e7e8;
+@grey2: #b2b2b2;
+@grey1: #7f7f7f;
+@grey0: #353535;
 
-@gray3: #e7e7e8; // Almost White Gray
-@gray2: #b2b2b2; // Light Gray
-@gray1: #7f7f7f; // Medium Gray
-@gray0: #353535; // Dark Gray
+@gray1: #2d353a;
+@gray0: #606060;
 
-@white: #ffffff; // White, duh
+@blue1: #55a0ba;
+@blue0: #9de1f9;
 
-@orange2: #ff8a00; // Light Orange
-@orange1: #f15500; // Bright Orange (TT Official)
-@orange0: #df3704; // Dark Orange
+@white: #ffffff;
+
+
+@orange2: #ff653b;
+@orange1: #f15a29;
+@orange0: #d34a26;
 
 body {
-	color: @gray0;
-	font-family: 'Oxygen', sans-serif;
+	color: @gray1;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	height: 100%;
+	margin: 0;
 	padding: 0;
-	font-size: 15px;
-	line-height: 34px;
+	font-size: 16px;
+	line-height: 28px;
 }
 
 h1 {
-	color: @orange1;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	color: @white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	font-size: 30px;
+	letter-spacing: 1px;
 }
 
 h2 {
-	color: @orange1;
-	font-family: 'Roboto Slab', serif;
-	font-size: 26px;
-	font-weight: 300;
+	color: @white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 1px;
 }
 
 h3 {
-	color: @orange1;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 8px;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 h4 {
 	color: @white;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-}
-
-h5 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 300;
-}
-
-h6 {
-	color: @white;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
 }
 
 .btn-default {
 	min-width: 250px;
-	border: solid 3px @white;
-	background-color: transparent;
+	border: solid 2px @white;
 	color: @white;
-	padding: 15px 20px;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	padding: 20px 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	margin-top: 15px;
-	font-size: 22px;
-	border-radius: 30px;
+	background: transparent;
+	border-radius: 0px;
 	font-size: 16px;
-	&:hover,
+	outline: none;
+}
+
+.btn-primary {
+	min-width: 230px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	border: solid 2px @orange2;
+	letter-spacing: 1px;
+	color: @white;
+	padding: 15px;
+	background: transparent;
+	border-radius: 50px;
+	font-size: 16px;
+	transition: background-color .4s ease-in-out;
+	-moz-transition: background-color .4s ease-in-out;
+	-webkit-transition: background-color .4s ease-in-out;
+	-o-transition: background-color .4s ease-in-out;
 	&:focus {
-		background-color: @white;
-		color: @orange1;
+	  background-image: none;
+	  outline: none;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
 	}
+	&:hover {
+		color: @white;
+		background-color: @orange2;
+		border: solid 2px @orange2;
+		transition: background-color .4s ease-in-out;
+		-moz-transition: background-color .4s ease-in-out;
+		-webkit-transition: background-color .4s ease-in-out;
+		-o-transition: background-color .4s ease-in-out;
+	}
+}
+
+.btn:focus {
+outline: none
 }
 
 .btn-meetups {
 	height: 500px;
 	width: 50px;
-	background: @gray2;
+	background: @gray1;
+}
+
+//Marigns & Padding(s)
+.marg-t {
+	margin-top: 10px !important;
+}
+.marg-l {
+	margin-left: 10px !important;
+}
+.marg-b {
+	margin-bottom: 10px !important;
+}
+.marg-r {
+	margin-right: 10px !important;
+}
+.marg-all {
+	margin: 10px !important;
+}
+.marg-none {
+	margin: 0px !important;
+}
+
+.pad-t {
+	padding-top: 10px !important;
+}
+.pad-l {
+	padding-left: 10px !important;
+}
+.pad-b {
+	padding-bottom: 10px !important;
+}
+.pad-r {
+	padding-right: 10px !important;
+}
+.pad-all {
+	padding: 10px !important;
+}
+.pad-none {
+	padding: 0px !important;
 }
 
 
-
-
-// Styles for each city
-
-.jumbotron {
-	height: 700px;
-  	background: url(../img/background.jpg) no-repeat center;
-  	background-size: cover;
-  	margin: 0px;
-	.jumbo-content {
-		position: relative;
-		top: 50px;
-		text-align: center;
-		@media (max-width: 550px) {
-			top: 80px;
-		}
-		.container {
-			margin: auto;
-		}
-		img.logo {
-			width: 400px;
-			height: auto;
-			margin: auto;
-			@media (max-width: 550px) {
-				width: 300px;
-			}
-		}
-		p {
-			font-size: 18px;
-			color: @white;
-			margin: 40px 0px;
-		}
-		a {
-			cursor: pointer;
-		}
-	}
-	@media(max-width: 500px) {
-		height: 750px;
-		.jumbo-content {
-			p {
-				font-size: 16px;
-			}
-		}
-	}
+//Animations
+/* Sweep To Top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-
-
-
-// About
-
-#about {
-	.thumbnails {
-		padding: 100px 0px;
-		text-align: center;
-		img {
-			height: 70px;
-			width: auto;
-			margin: auto;
-		}
-		@media(max-width: 767px) {
-			padding: 70px 0px;
-			img {
-				margin-top: 50px;
-			}
-		}
-	}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
-
-
-
-// Meetups Intro
-
-.meetups-intro {
-	margin-top: 70px;
-	background: linear-gradient(to bottom right, @orange1, @orange2);
-	color: @white;
-	padding: 70px 20px 90px 20px;
-	overflow: hidden;
-	text-align: center;
-	h2 {
-		color: @white;
-		margin-bottom: 20px;
-	}
-	hr {
-		border-top: 3px solid @white;
-		width: 20%;
-	}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
 }
-
-
-
-// Meetups
-
-
-#meetups {
-	margin-top: 50px;
-	padding: 70px 0px;
-	.media {
-		margin: 40px 20px;
-	}
-	img {
-		border: 1px solid @gray3;
-		border-radius: 4px;
-		width: 70px;
-		margin-right: 10px;
-		height: auto;
-	}
-	hr {
-		border-top: solid 2px @gray2;
-		width: 10%;
-		margin: 20px 0px;
-		text-align: left;
-	}
-	a {
-		text-decoration: none;
-	}
-}
-
-
-// Registration
-
-
-#registration {
-	padding: 50px 0px 30px 0px;
-	text-align: center;
-	background: linear-gradient(to bottom right, @orange1, @orange0);
-	color: @white;
-	p {
-		margin-top: 30px;
-	}
-	hr {
-		border-bottom: 1px solid @white;
-		width: 10%;
-	}
-}
-
-
-// Sponsors
-
-#sponsors {
-	h3 {
-		text-align: center;
-		margin-top: 70px;
-		margin-bottom: 30px;
-	}
-	.logos {
-		margin: auto;
-		text-align: center;
-		img {
-			max-height: 40px;
-			width: auto;
-			margin: 20px;
-		}
-	}
-}
-
-
-
-// Footer
-
-footer {
-	padding: 20px 0px 40px 0px;
-	background-color: @orange0;
-	color: @white;
-	font-size: 16px;
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
 }

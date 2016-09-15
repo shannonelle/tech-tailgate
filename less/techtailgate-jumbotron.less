@@ -1,0 +1,37 @@
+.jumbotron {
+  	background: url(../img/hero.jpg) fixed center center;
+  	background-size: cover;
+  	padding: 100px 20px 100px;
+  	margin-bottom: 0px;
+  	background-color: @gray1;
+	.jumbo-content {
+		text-align: center;
+		@media (max-width: 550px) {
+			top: 80px;
+		}
+		.container {
+			margin: auto;
+		}
+		img {
+			width: 400px;
+			height: auto;
+			margin: 50px auto 50px;
+			@media (max-width: 550px) {
+				width: 300px;
+			}
+		}
+		p {
+			font-size: 18px;
+			color: @white;
+			margin-bottom: 40px;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a {
+			color: @white;
+		}
+	}
+}
+
+
